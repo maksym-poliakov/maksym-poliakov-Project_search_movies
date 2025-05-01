@@ -1,3 +1,4 @@
+
 # Film Search Application
 
 ## Overview
@@ -77,3 +78,4 @@ pip install mysql-connector-python python-dotenv
 
 ## License
 This project is licensed under the MIT License (unless otherwise specified).
+
