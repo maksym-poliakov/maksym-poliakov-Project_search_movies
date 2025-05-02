@@ -199,6 +199,8 @@ class UserInterface :
             print(f"По вашему запросу {' '.join(search_text)} найдено {count} совпадений ")
         else:
             count = size_show
+            if total_len_data < size_show :
+                count = total_len_data
             print(f"Всего найдено результатов {total_len_data} : \n")
             self.__output_screen_result_search(list_result_search)
             print(f"Выведено {count} из {total_len_data}")
