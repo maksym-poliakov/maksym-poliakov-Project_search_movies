@@ -196,7 +196,11 @@ class UserInterface :
         count_tmp = self.database_read.get_seize_request()
         if total_len_data == 0 :
             count = 0
-            print(f"По вашему запросу {' '.join(search_text)} найдено {count} совпадений ")
+            if isinstance(search_text,list) :
+                text = ' '.join(search_text)
+            else :
+                text = search_text
+            print(f"По вашему запросу {text} найдено {count} совпадений ")
         else:
             count = size_show
             if total_len_data < size_show :
