@@ -196,7 +196,7 @@ class UserInterface :
         count_tmp = self.database_read.get_seize_request()
         if total_len_data == 0 :
             count = 0
-            if isinstance(search_text,list) :
+            if isinstance(search_text,(list, tuple)) :
                 text = ' '.join(search_text)
             else :
                 text = search_text
